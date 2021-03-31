@@ -22,10 +22,12 @@ pipeline{
                 sh 'mvn package'
             }
         }
-        stage('Deploy'){
-            steps{
-                sh 'java -jar /var/lib/jenkins/workspace/PetClinicDeclarativePipleline/target/*.jar'
-            }
-        }
+//        stage('Deploy'){
+//           steps{
+//                sh 'java -jar /var/lib/jenkins/workspace/PetClinicDeclarativePipleline/target/*.jar'
+//            }
+//        }
+
+        
     }
 }
